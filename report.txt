@@ -1,0 +1,287 @@
+Esercizio 1.1
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08 (main) $ pwd
+/workspaces/lezione-bash-01-FilippoBiancofiore08
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08 (main) $ ls
+README.md  esercizi  sandbox  setup.sh
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08 (main) $ cd esercizi
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi (main) $ pwd
+/workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi (main) $ ls
+documenti  immagini  permessi  progetti
+
+
+Esercizio 1.2
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi (main) $ cd documenti
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/documenti (main) $ cd report
+@FilippoBiancofiore08 ➜ .../lezione-bash-01-FilippoBiancofiore08/esercizi/documenti/report (main) $ cd 2024
+@FilippoBiancofiore08 ➜ .../esercizi/documenti/report/2024 (main) $ pwd
+/workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/documenti/report/2024
+@FilippoBiancofiore08 ➜ .../esercizi/documenti/report/2024 (main) $ ls
+vendite_q1.txt
+
+
+Esercizio 2.1
+
+@FilippoBiancofiore08 ➜ .../esercizi/documenti/report/2024 (main) $ cd /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/progetti/webapp/src
+@FilippoBiancofiore08 ➜ .../esercizi/progetti/webapp/src (main) $ pwd
+/workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/progetti/webapp/src
+@FilippoBiancofiore08 ➜ .../esercizi/progetti/webapp/src (main) $ cd ../../../..
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08 (main) $ pwd
+/workspaces/lezione-bash-01-FilippoBiancofiore08
+
+
+Esercizio 2.2
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08 (main) $ cd esercizi/documenti/lettere
+@FilippoBiancofiore08 ➜ .../lezione-bash-01-FilippoBiancofiore08/esercizi/documenti/lettere (main) $ cd ../../immagini/vacanze
+@FilippoBiancofiore08 ➜ .../lezione-bash-01-FilippoBiancofiore08/esercizi/immagini/vacanze (main) $ pwd
+/workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/immagini/vacanze
+
+
+Esercizio 2.3
+
+@FilippoBiancofiore08 ➜ .../lezione-bash-01-FilippoBiancofiore08/esercizi/immagini/vacanze (main) $ cd ~
+@FilippoBiancofiore08 ➜ ~ $ pwd
+/home/codespace
+@FilippoBiancofiore08 ➜ ~ $ cd -
+/workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/immagini/vacanze
+@FilippoBiancofiore08 ➜ .../lezione-bash-01-FilippoBiancofiore08/esercizi/immagini/vacanze (main) $ pwd
+/workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/immagini/vacanze
+
+
+Esercizio 3.1
+
+@FilippoBiancofiore08 ➜ .../lezione-bash-01-FilippoBiancofiore08/esercizi/immagini/vacanze (main) $ cd /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ mkdir test
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ ls
+test
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ cd test
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox/test (main) $ mkdir alfa beta gamma
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox/test (main) $ ls
+alfa  beta  gamma
+
+
+Esercizio 3.2
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox/test (main) $ cd ..
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ mkdir livello1/livello2/livello3
+mkdir: cannot create directory ‘livello1/livello2/livello3’: No such file or directory
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ mkdir -p livello1/livello2/livello3
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ tree livello1
+livello1
+└── livello2
+    └── livello3
+
+3 directories, 0 files
+
+
+Esercizio 3.3
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ mkdir -p archivio/{2022,2023,2024}/{entrate,uscite}
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ tree archivio
+archivio
+├── 2022
+│   ├── entrate
+│   └── uscite
+├── 2023
+│   ├── entrate
+│   └── uscite
+└── 2024
+    ├── entrate
+    └── uscite
+
+10 directories, 0 files
+
+
+Esercizio 4.1
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ cd test
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox/test (main) $ rmdir alfa
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox/test (main) $ ls
+beta  gamma
+
+
+Esercizio 4.2
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox/test (main) $ cd ..
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ rmdir livello1
+rmdir: failed to remove 'livello1': Directory not empty
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ rm -r livello1
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ ls
+archivio  test
+
+
+Esercizio 4.3
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ rm -r archivio
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ rm -r test
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ ls
+
+
+Esercizio 5.1
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ cd /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi (main) $ ls
+documenti  immagini  permessi  progetti
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi (main) $ ls -l
+total 16
+drwxrwxrwx+ 4 codespace codespace 4096 Feb  8 09:14 documenti
+drwxrwxrwx+ 4 codespace codespace 4096 Feb  8 09:14 immagini
+drwxrwxrwx+ 2 codespace codespace 4096 Feb  8 09:14 permessi
+drwxrwxrwx+ 4 codespace codespace 4096 Feb  8 09:14 progetti
+
+
+Esercizio 5.2
+
+FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi (main) $ cd ~
+@FilippoBiancofiore08 ➜ ~ $ ls
+java  nvm
+@FilippoBiancofiore08 ➜ ~ $ ls -a
+.   .bash_logout  .cache  .config  .dotnet     .hugo     .local  .minikube  .nvs        .php      .python  .ruby   .vscode-remote  .zshrc  nvm
+..  .bashrc       .conda  .docker  .gitconfig  .jupyter  .maven  .npm       .oh-my-zsh  .profile  .rbenv   .rvmrc  .zprofile       java
+
+
+Esercizio 5.3
+
+@FilippoBiancofiore08 ➜ ~ $ ls -l /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi
+total 20
+-rwxr-xr-x 1 codespace codespace 36 Feb  8 09:14 eseguibile.sh
+-rw-r--r-- 1 codespace codespace 41 Feb  8 09:14 non_eseguibile.sh
+-rw------- 1 codespace codespace 36 Feb  8 09:14 privato.txt
+-rw-r--r-- 1 codespace codespace 38 Feb  8 09:14 pubblico.txt
+---------- 1 codespace codespace 48 Feb  8 09:14 segreto.txt
+
+
+Esercizio 6.1
+
+@FilippoBiancofiore08 ➜ ~ $ cd /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ ls -l
+total 20
+-rwxr-xr-x 1 codespace codespace 36 Feb  8 09:14 eseguibile.sh
+-rw-r--r-- 1 codespace codespace 41 Feb  8 09:14 non_eseguibile.sh
+-rw------- 1 codespace codespace 36 Feb  8 09:14 privato.txt
+-rw-r--r-- 1 codespace codespace 38 Feb  8 09:14 pubblico.txt
+---------- 1 codespace codespace 48 Feb  8 09:14 segreto.txt
+
+1) pubblico.txt
+
+proprietario : rw- (lettura e scrittura)
+gruppo : r-- (solo lettura)
+altri : r-- (solo lettura)
+
+2) privato.txt
+
+proprietario : rw- (lettura e scrittura)
+gruppo : --- (nessun permesso)
+altri : --- (nessun permesso)
+
+3) segreto.txt
+
+proprietario : --- (nessun permesso)
+gruppo : --- (nessun permesso)
+altri : --- (nessun permesso)
+
+
+Esercizio 6.2
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ cat pubblico.txt 
+File pubblico - tutti possono leggere
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ cat privato.txt 
+File privato - solo il proprietario
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ cat segreto.txt 
+cat: segreto.txt: Permission denied
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ ./eseguibile.sh 
+Sono eseguibile!
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ ./non_eseguibile.sh
+bash: ./non_eseguibile.sh: Permission denied
+
+
+Esercizio 6.3
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ ls -l /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi
+total 16
+drwxrwxrwx+ 4 codespace codespace 4096 Feb  8 09:14 documenti
+drwxrwxrwx+ 4 codespace codespace 4096 Feb  8 09:14 immagini
+drwxrwxrwx+ 2 codespace codespace 4096 Feb  8 09:14 permessi
+drwxrwxrwx+ 4 codespace codespace 4096 Feb  8 09:14 progetti
+
+Se una directory non avesse il permesso x non ci si potrebbe accedere con cd e non si potrebbe accedere ai file al suo interno
+
+
+Esercizio 7.1
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ cat segreto.txt 
+cat: segreto.txt: Permission denied
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ chmod u+r segreto.txt 
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ cat segreto.txt 
+File segreto - solo lettura per il proprietario
+
+
+Esercizio 7.2
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ chmod u+x non_eseguibile.sh 
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ ./non_eseguibile.sh 
+Script non eseguibile
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ ls -l non_eseguibile.sh 
+-rwxr--r-- 1 codespace codespace 41 Feb  8 09:14 non_eseguibile.sh
+
+
+Esercizio 7.3
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ cd /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ echo '#!/bin/bash
+echo "Ciao, sono uno script!"' > saluta.sh
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ ./saluta.sh
+bash: ./saluta.sh: Permission denied
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ chmod +x saluta.sh 
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ ./saluta.sh 
+Ciao, sono uno script!
+
+
+Extra 1
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ mkdir -p azienda/{amministrazione/{fatture,contratti},sviluppo/{frontend,backend},risorse_umane/{assunzioni,stipendi}}
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ tree azienda
+azienda
+├── amministrazione
+│   ├── contratti
+│   └── fatture
+├── risorse_umane
+│   ├── assunzioni
+│   └── stipendi
+└── sviluppo
+    ├── backend
+    └── frontend
+
+10 directories, 0 files
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ rm -r azienda
+
+
+Extra 2
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08 (main) $ cd esercizi/permessi/
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ ls -l
+total 20
+-rwxr-xr-x 1 codespace codespace 36 Feb  8 09:14 eseguibile.sh
+-rwxr--r-- 1 codespace codespace 41 Feb  8 09:14 non_eseguibile.sh
+-rw------- 1 codespace codespace 36 Feb  8 09:14 privato.txt
+-rw-r--r-- 1 codespace codespace 38 Feb  8 09:14 pubblico.txt
+-r-------- 1 codespace codespace 48 Feb  8 09:14 segreto.txt
+
+1) eseguibile.sh e non_eseguibile.sh hanno permesso di esecuzione
+2) nessun file non ha nessun permesso
+
+
+Extra 3
+
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/esercizi/permessi (main) $ cd /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ echo '#!/bin/bash
+echo "Hai scoperto il segreto!"' > segreto.sh
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ chmod u=rwx,go= segreto.sh 
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ ./segreto.sh 
+Hai scoperto il segreto!
+@FilippoBiancofiore08 ➜ /workspaces/lezione-bash-01-FilippoBiancofiore08/sandbox (main) $ ls -l segreto.sh 
+-rwx------ 1 codespace codespace 44 Feb  8 10:00 segreto.sh
+
